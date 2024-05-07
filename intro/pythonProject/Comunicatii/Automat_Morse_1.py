@@ -63,17 +63,17 @@ if semne_aleatoare==False:
     print('Se transmite text predefinit. Pentru text cu semne aleatoare seteaza variabila semne_aleatoare = True')
     print()
 
-cm=semne['a']   # semnul telegrafic este stabilit in variabila cod_Morse
+
 
 
 def transmisie():  # este definita functia transmisie
 
     print(cheie, end=" ")
-    j = len(cm)  # variabilei j i se atribuie valoarea lungimii continutului din cod_Morse
+    j = len(cm)  # variabilei j i se atribuie valoarea lungimii continutului din variabila cm
 
-    for i in range(j): # fiecare element al valorii din variabila tip string cod_Morse este transformat in sunet
+    for i in range(j):
             sleep(slp1)  # pauza in functie de valoarea slp1
-            Beep(ton, int(cm[i])*viteza2)
+            Beep(ton, int(cm[i])*viteza2) # fiecare element al valorii din variabila tip string cm este transformat in sunet
 
 
 if semne_aleatoare==False:
