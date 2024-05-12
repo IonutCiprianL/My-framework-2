@@ -1,0 +1,1 @@
+Exercitii individuale sesiunea 6
